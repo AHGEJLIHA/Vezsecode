@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
 }
 
+input {
+    width: 80%;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -36,9 +40,24 @@ body {
     margin: 0 auto;
 }
 
-.title-field {
-    width: 25%;
+.forms > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.forms > div > p {
+    width: 10%;
     align-self: flex-start;
+}
+
+.forms > div.name-field > p {
+    width: 10%;
+    align-self: flex-start;
+
+    margin-right: 24px;
 }
 
 .name-field {
@@ -47,12 +66,13 @@ body {
     align-items: center;
 
     width: 100%;
-    max-width: 1000px;
 }
 
-.name-title-field {
-    margin-left: 10px;
-    margin-right: 24px;
+.name-field > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
 }
 
 .name-title-field:first-child {
@@ -60,20 +80,12 @@ body {
 }
 
 .name-field-input {
-    width: 50%;
-    max-width: 460px;
+    /* width: 50%; */
+    /* max-width: 460px; */
 }
 
 .name-field-input:first-child {
     margin-left: 0;
-}
-
-.input-field-form {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-
-    margin-bottom: 10px;
 }
 
 .input-field {

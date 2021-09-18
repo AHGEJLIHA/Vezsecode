@@ -19,30 +19,34 @@
             <h2 class="title">Form title</h2>
             <div class="forms">
                 <div class="name-field">
-                    <p class="name-title-field title-field">first name<span style="color: red; ">*</span>:</p>
-                    <input class="name-field-input" name="first-name"/>
-                    <p class="name-title-field title-field">last name<span style="color: red; ">*</span>:</p>
-                    <input class="name-field-input" name="second-name"/>
+                    <div>
+                    <p >first name<span style="color: red; ">*</span>:</p>
+                    <input required class="name-field-input" name="first-name"/>
+                    </div>
+                    <div>
+                    <p >last name<span style="color: red; ">*</span>:</p>
+                    <input required class="name-field-input" name="second-name"/>
+                    </div>
                 </div>
 
-                <div class="input-field-form">
-                    <p class="title-field">email<span style="color: red; ">*</span>:</p>
-                        <input class="input-field" name="email"/>
+                <div >
+                    <p >email<span style="color: red; ">*</span>:</p>
+                        <input required class="input-field" name="email"/>
                 </div>
 
-                <div class="input-field-form">
-                    <p class="title-field">company<span style="color: red; "></span>:</p>
+                <div >
+                    <p >company:</p>
                         <input class="input-field" name="company"/>
                 </div>
 
-                <div class="input-field-form">
-                    <p class="title-field">city<span style="color: red; ">*</span>:</p>
-                        <input class="input-field" name="city"/>
+                <div >
+                    <p >city<span style="color: red; ">*</span>:</p>
+                        <input required class="input-field" name="city"/>
                 </div>
 
-                <div class="input-field-form">
-                    <p class="title-field">message<span style="color: red; ">*</span>:</p>
-                        <textarea></textarea>
+                <div >
+                    <p >message<span style="color: red; ">*</span>:</p>
+                        <textarea required></textarea>
                 </div>
 
                 <div class="button">
