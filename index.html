@@ -1,62 +1,66 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/inputs.css">
-    <link rel="stylesheet" href="css/labels.css">
-    <link rel="stylesheet" href="css/forms.css">
-    <title>Вездекод</title>
-</head>
-<body>
-    <div >
-        <form method="post" action="http://localhost:8080/login.php">
-
-        <div class="container">
-            <select class="input-select">
-                <option value="en">en</option>
-                <option value="rus">rus</option>
-                <option value="ar">ar</option>
-            </select>
-        </div>
-            <h2 class="title">Form title</h2>
-            <div class="forms">
-                <div class="name-field">
-                    <div>
-                    <p >first name<span style="color: red; ">*</span>:</p>
-                    <input required class="name-field-input" name="first-name"/>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/inputs.css" />
+        <link rel="stylesheet" href="css/labels.css" />
+        <link rel="stylesheet" href="css/forms.css" />
+        <title>Вездекод</title>
+    </head>
+    <body>
+        <div>
+            <form>
+                <div class="container">
+                    <select class="input-select desktop">
+                        <option value="en">en</option>
+                        <option value="rus">rus</option>
+                        <option value="ar">ar</option>
+                    </select>
+                    <select class="mobile">
+                        <option value="en">en</option>
+                        <option value="rus">rus</option>
+                        <option value="ar">ar</option>
+                    </select>
+                </div>
+                <h2 class="title">Form title</h2>
+                <div class="forms">
+                    <div class="name-field">
+                        <div>
+                            <p>first name<span style="color: red">*</span>:</p>
+                            <input required class="name-field-input" name="first-name" />
+                        </div>
+                        <div>
+                            <p>last name<span style="color: red">*</span>:</p>
+                            <input required class="name-field-input" name="second-name" />
+                        </div>
                     </div>
+
                     <div>
-                    <p >last name<span style="color: red; ">*</span>:</p>
-                    <input required class="name-field-input" name="second-name"/>
+                        <p>email<span style="color: red">*</span>:</p>
+                        <input required name="email" />
                     </div>
-                </div>
 
-                <div >
-                    <p >email<span style="color: red; ">*</span>:</p>
-                        <input required class="input-field" name="email"/>
-                </div>
+                    <div>
+                        <p>company:</p>
+                        <input name="company" />
+                    </div>
 
-                <div >
-                    <p >company:</p>
-                        <input class="input-field" name="company"/>
-                </div>
+                    <div>
+                        <p>city<span style="color: red">*</span>:</p>
+                        <input required name="city" />
+                    </div>
 
-                <div >
-                    <p >city<span style="color: red; ">*</span>:</p>
-                        <input required class="input-field" name="city"/>
-                </div>
-
-                <div >
-                    <p >message<span style="color: red; ">*</span>:</p>
+                    <div>
+                        <p>message<span style="color: red">*</span>:</p>
                         <textarea required></textarea>
-                </div>
+                    </div>
 
-                <div class="button">
-                    <input type="submit" value="Send" class="submit"/>
+                    <div class="button mobile-button-large">
+                        <input type="submit" value="Send" class="submit" />
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
-</body>
+            </form>
+        </div>
+    </body>
 </html>

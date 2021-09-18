@@ -21,4 +21,20 @@ body {
     width: 53px;
 }
 
+@media (max-width: 900px) {
+    .mobile-button-large {
+        width: 100%;
+    }
+}
 
+@media (max-width: 900px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .mobile {
+        display: none;
+    }
+}
