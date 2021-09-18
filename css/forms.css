@@ -1,0 +1,17 @@
+.forms {
+    width: 80vw;
+
+    margin: 0 auto;
+}
+
+.forms > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.submit {
+    padding: 5px 10px;
+}

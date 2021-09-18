@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+
+    margin: 25px;
+}
+
+.forms > div > p {
+    width: 10%;
+    align-self: flex-start;
+}
+
+.forms > div.name-field > p {
+    width: 10%;
+    align-self: flex-start;
+
+    margin-right: 24px;
+}

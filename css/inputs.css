@@ -1,0 +1,45 @@
+input {
+    width: 80%;
+}
+
+.input-select {
+    text-align: center;
+
+    padding: 7px 5px;
+}
+
+.input-field {
+    width: 100%;
+    max-width: 920px;
+}
+
+.name-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.name-field > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.name-title-field:first-child {
+    margin-left: 0;
+}
+
+
+.name-field-input:first-child {
+    margin-left: 0;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    max-height: 1000px;
+    resize: vertical;
+}
