@@ -6,19 +6,18 @@
     <title>Вездекод</title>
 </head>
 <body>
-    <div class="container">
+    <div >
         <form method="post" action="http://localhost:8080/login.php">
 
+        <div class="container">
             <select class="input-select">
                 <option value="en">en</option>
                 <option value="rus">rus</option>
                 <option value="ar">ar</option>
             </select>
-
+        </div>
             <h2 class="title">Form title</h2>
-
             <div class="forms">
-
                 <div class="name-field">
                     <p class="name-title-field title-field">first name<span style="color: red; ">*</span>:</p>
                     <input class="name-field-input" name="first-name"/>
@@ -32,7 +31,7 @@
                 </div>
 
                 <div class="input-field-form">
-                    <p class="title-field">company<span style="color: red; ">*</span>:</p>
+                    <p class="title-field">company<span style="color: red; "></span>:</p>
                         <input class="input-field" name="company"/>
                 </div>
 
@@ -49,7 +48,6 @@
                 <div class="button">
                     <input type="submit" value="Send" class="submit"/>
                 </div>
-
             </div>
         </form>
     </div>
