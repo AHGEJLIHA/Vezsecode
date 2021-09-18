@@ -38,7 +38,12 @@
 
                     <div>
                         <p>email<span style="color: red">*</span>:</p>
-                        <input required name="email" />
+                        <input
+                            required
+                            pattern="[A-Za-z][A-Za-z0-9-_]*[/@][A-Za-z0-9-_]+[.][A-Za-z][A-Za-z][A-Za-z]?"
+                            name="email"
+                            type="email"
+                        />
                     </div>
 
                     <div>
