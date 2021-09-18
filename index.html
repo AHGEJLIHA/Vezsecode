@@ -28,11 +28,21 @@
                     <div class="name-field">
                         <div>
                             <p>first name<span style="color: red">*</span>:</p>
-                            <input required class="name-field-input" name="first-name" />
+                            <input
+                                required
+                                minlength="5"
+                                class="name-field-input"
+                                name="first-name"
+                            />
                         </div>
                         <div>
                             <p>last name<span style="color: red">*</span>:</p>
-                            <input required class="name-field-input" name="second-name" />
+                            <input
+                                required
+                                minlength="5"
+                                class="name-field-input"
+                                name="second-name"
+                            />
                         </div>
                     </div>
 
@@ -48,21 +58,21 @@
 
                     <div>
                         <p>company:</p>
-                        <input name="company" />
+                        <input minlength="5" name="company" />
                     </div>
 
                     <div>
                         <p>city<span style="color: red">*</span>:</p>
-                        <input required name="city" />
+                        <input required minlength="5" name="city" />
                     </div>
 
                     <div>
                         <p>message<span style="color: red">*</span>:</p>
-                        <textarea required></textarea>
+                        <textarea required minlength="5"></textarea>
                     </div>
 
                     <div class="button mobile-button-large">
-                        <input type="submit" value="Send" class="submit" />
+                        <input class="submit" type="submit" value="Send" />
                     </div>
                 </div>
             </form>
