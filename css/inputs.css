@@ -1,16 +1,17 @@
-input {
-    width: 80%;
+@media (max-width: 900px) {
+    input {
+        height: 40px;
+    }
+}
+
+.forms input {
+    width: 100%;
 }
 
 .input-select {
     text-align: center;
 
     padding: 7px 5px;
-}
-
-.input-field {
-    width: 100%;
-    max-width: 920px;
 }
 
 .name-field {
@@ -21,17 +22,40 @@ input {
     width: 100%;
 }
 
-.name-field > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 45%;
+@media (min-width: 900px) {
+    .name-field > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 45%;
+    }
+}
+
+@media (max-width: 900px) {
+    .name-field {
+        flex-wrap: wrap;
+    }
+
+    .name-field > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .name-field > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .name-field input {
+        height: 50px;
+    }
 }
 
 .name-title-field:first-child {
     margin-left: 0;
 }
-
 
 .name-field-input:first-child {
     margin-left: 0;
@@ -39,7 +63,12 @@ input {
 
 textarea {
     width: 100%;
-    min-height: 200px;
     max-height: 1000px;
     resize: vertical;
+}
+
+@media (max-width: 900px) {
+    textarea {
+        min-height: 120px;
+    }
 }
