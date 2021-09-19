@@ -6,11 +6,12 @@
         <link rel="stylesheet" href="css/inputs.css" />
         <link rel="stylesheet" href="css/labels.css" />
         <link rel="stylesheet" href="css/forms.css" />
+
         <title>Вездекод</title>
     </head>
     <body>
         <div>
-            <form>
+            <form id="userInfo">
                 <div class="container">
                     <select class="input-select desktop">
                         <option value="en">en</option>
@@ -27,21 +28,31 @@
                 <div class="forms">
                     <div class="name-field">
                         <div>
-                            <p>first name<span style="color: red">*</span>:</p>
+                            <p>
+                                first name<span style="color: red"
+                                    >*</span
+                                >:
+                            </p>
                             <input
                                 required
                                 minlength="5"
                                 class="name-field-input"
                                 name="first-name"
+                                value="valid name"
                             />
                         </div>
                         <div>
-                            <p>last name<span style="color: red">*</span>:</p>
+                            <p>
+                                last name<span style="color: red"
+                                    >*</span
+                                >:
+                            </p>
                             <input
                                 required
                                 minlength="5"
                                 class="name-field-input"
                                 name="second-name"
+                                value="invaaaalid name"
                             />
                         </div>
                     </div>
@@ -53,29 +64,46 @@
                             pattern="[A-Za-z][A-Za-z0-9-_]*[/@][A-Za-z0-9-_]+[.][A-Za-z][A-Za-z][A-Za-z]?"
                             name="email"
                             type="email"
+                            value="example-03_@df-fd.com"
                         />
                     </div>
 
                     <div>
                         <p>company:</p>
-                        <input minlength="5" name="company" />
+                        <input
+                            minlength="5"
+                            name="company"
+                            value="ООО comp"
+                        />
                     </div>
 
                     <div>
                         <p>city<span style="color: red">*</span>:</p>
-                        <input required minlength="5" name="city" />
+                        <input
+                            required
+                            minlength="5"
+                            name="city"
+                            value="city---"
+                        />
                     </div>
 
                     <div>
-                        <p>message<span style="color: red">*</span>:</p>
+                        <p>
+                            message<span style="color: red">*</span>:
+                        </p>
                         <textarea required minlength="5"></textarea>
                     </div>
 
                     <div class="button mobile-button-large">
-                        <input class="submit" type="submit" value="Send" />
+                        <input
+                            class="submit"
+                            type="submit"
+                            value="Send"
+                        />
                     </div>
                 </div>
             </form>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
