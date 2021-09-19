@@ -7,7 +7,8 @@
             "email": "email",
             "company": "company",
             "city": "city",
-            "message": "message"
+            "message": "message",
+            "send": "send"
         },
         "ru": {
             "title": "Название формы",
@@ -16,7 +17,8 @@
             "email": "E-mail",
             "company": "Компания",
             "city": "Город",
-            "message": "Текст сообщения"
+            "message": "Текст сообщения",
+            "send": "Отправить"
         },
         "ar": {
             "title": "لقب شكل",
@@ -25,7 +27,8 @@
             "email": "البريد الإلكتروني",
             "company": "شركة",
             "city": "مدينة",
-            "message": "رسالة"
+            "message": "رسالة",
+            "send": "يرسل"
         }
     }
 }
