@@ -11,15 +11,15 @@
     <body>
         <div>
             <form id="userInfo">
-                <div class="container">
+                <div id="switcherContainer" class="container">
                     <select class="input-select desktop">
                         <option value="en">en</option>
-                        <option value="rus">rus</option>
+                        <option value="ru">ru</option>
                         <option value="ar">ar</option>
                     </select>
                     <select class="mobile">
                         <option value="en">en</option>
-                        <option value="rus">rus</option>
+                        <option value="ru">ru</option>
                         <option value="ar">ar</option>
                     </select>
                 </div>
@@ -27,11 +27,7 @@
                 <div class="forms">
                     <div class="name-field">
                         <div>
-                            <p id="first_name">
-                                first name<span style="color: red"
-                                    >*</span
-                                >:
-                            </p>
+                            <p id="first_name">first name<span style="color: red">*</span>:</p>
                             <input
                                 required
                                 minlength="5"
@@ -40,11 +36,7 @@
                             />
                         </div>
                         <div>
-                            <p id="last_name">
-                                last name<span style="color: red"
-                                    >*</span
-                                >:
-                            </p>
+                            <p id="last_name">last name<span style="color: red">*</span>:</p>
                             <input
                                 required
                                 minlength="5"
@@ -55,9 +47,7 @@
                     </div>
 
                     <div>
-                        <p id="email">
-                            email<span style="color: red">*</span>:
-                        </p>
+                        <p id="email">email<span style="color: red">*</span>:</p>
                         <input
                             required
                             pattern="[A-Za-z][A-Za-z0-9-_]*[/@][A-Za-z0-9-_]+[.][A-Za-z][A-Za-z][A-Za-z]?"
@@ -67,30 +57,22 @@
                     </div>
 
                     <div>
-                        <p id="company">company:</p>
+                        <p id="company">company<span>:</span></p>
                         <input minlength="5" name="company" />
                     </div>
 
                     <div>
-                        <p id="city">
-                            city<span style="color: red">*</span>:
-                        </p>
+                        <p id="city">city<span style="color: red">*</span>:</p>
                         <input required minlength="5" name="city" />
                     </div>
 
                     <div>
-                        <p id="message">
-                            message<span style="color: red">*</span>:
-                        </p>
+                        <p id="message">message<span style="color: red">*</span>:</p>
                         <textarea required minlength="5"></textarea>
                     </div>
 
                     <div class="button mobile-button-large">
-                        <input
-                            class="submit"
-                            type="submit"
-                            value="Send"
-                        />
+                        <input class="submit" type="submit" value="Send" />
                     </div>
                 </div>
             </form>
